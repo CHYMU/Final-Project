@@ -1,5 +1,4 @@
 # 🚮**Hongyu Chen Final Project**
-![image](https://github.com/qlkaaron/Smart-Trash-Bin/blob/HistoryFile/img/trashbin.png)
 ## Follow us! Here is our social media links. We will continue to update the latest developments...🚀🔗
 🔗Youtube channel:
 https://www.youtube.com/channel/UC5s7DoMgMNC2AQGXQb5fd2A
