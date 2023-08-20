@@ -1,0 +1,906 @@
+(base) chyyy@chyyy-virtual-machine:~/Desktop$ conda create -n py37 python=3.7 -y
+Collecting package metadata (current_repodata.json): done
+Solving environment: unsuccessful attempt using repodata from current_repodata.json, retrying with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.5.2
+  latest version: 23.7.2
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=23.7.2
+
+
+
+## Package Plan ##
+
+  environment location: /home/chyyy/anaconda3/envs/py37
+
+  added / updated specs:
+    - python=3.7
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2022.12.7          |   py37h06a4308_0         150 KB
+    pip-22.3.1                 |   py37h06a4308_0         2.7 MB
+    python-3.7.16              |       h7a1cb2a_0        44.8 MB
+    setuptools-65.6.3          |   py37h06a4308_0         1.1 MB
+    wheel-0.38.4               |   py37h06a4308_0          63 KB
+    ------------------------------------------------------------
+                                           Total:        48.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2023.05.30-h06a4308_0 
+  certifi            pkgs/main/linux-64::certifi-2022.12.7-py37h06a4308_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1 
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_0 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1 
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1 
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0 
+  openssl            pkgs/main/linux-64::openssl-1.1.1u-h7f8727e_0 
+  pip                pkgs/main/linux-64::pip-22.3.1-py37h06a4308_0 
+  python             pkgs/main/linux-64::python-3.7.16-h7a1cb2a_0 
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0 
+  setuptools         pkgs/main/linux-64::setuptools-65.6.3-py37h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.41.2-h5eee18b_0 
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0 
+  wheel              pkgs/main/linux-64::wheel-0.38.4-py37h06a4308_0 
+  xz                 pkgs/main/linux-64::xz-5.4.2-h5eee18b_0 
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_0 
+
+
+
+Downloading and Extracting Packages
+                                                                                
+Preparing transaction: done                                                     
+Verifying transaction: done                                                     
+Executing transaction: done                                                     
+#                                                                               
+# To activate this environment, use
+#
+#     $ conda activate py37
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) chyyy@chyyy-virtual-machine:~/Desktop$ conda activate py37
+(py37) chyyy@chyyy-virtual-machine:~/Desktop$ pip install gym[all]
+Collecting gym[all]
+  Using cached gym-0.26.2.tar.gz (721 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting numpy>=1.18.0
+  Downloading numpy-1.21.6-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 3.8 MB/s eta 0:00:00
+Collecting gym-notices>=0.0.4
+  Using cached gym_notices-0.0.8-py3-none-any.whl (3.0 kB)
+Collecting cloudpickle>=1.2.0
+  Using cached cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+Collecting importlib-metadata>=4.8.0
+  Downloading importlib_metadata-6.7.0-py3-none-any.whl (22 kB)
+Collecting moviepy>=1.0.0
+  Using cached moviepy-1.0.3.tar.gz (388 kB)
+  Preparing metadata (setup.py) ... done
+Collecting opencv-python>=3.0
+  Using cached opencv_python-4.8.0.74-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (61.7 MB)
+Collecting swig==4.*
+  Using cached swig-4.1.1-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.8 MB)
+Collecting pygame==2.1.0
+  Downloading pygame-2.1.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 2.7 MB/s eta 0:00:00
+Collecting box2d-py==2.3.5
+  Downloading box2d_py-2.3.5-cp37-cp37m-manylinux1_x86_64.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 2.2 MB/s eta 0:00:00
+Collecting mujoco-py<2.2,>=2.1
+  Using cached mujoco_py-2.1.2.14-py3-none-any.whl (2.4 MB)
+Collecting lz4>=3.1.0
+  Downloading lz4-4.3.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 1.6 MB/s eta 0:00:00
+Collecting pytest==7.0.1
+  Using cached pytest-7.0.1-py3-none-any.whl (296 kB)
+Collecting mujoco==2.2
+  Downloading mujoco-2.2.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 2.3 MB/s eta 0:00:00
+Collecting ale-py~=0.8.0
+  Downloading ale_py-0.8.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 3.3 MB/s eta 0:00:00
+Collecting imageio>=2.14.1
+  Using cached imageio-2.31.1-py3-none-any.whl (313 kB)
+Collecting matplotlib>=3.0
+  Downloading matplotlib-3.5.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (11.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.2/11.2 MB 3.3 MB/s eta 0:00:00
+Collecting absl-py
+  Using cached absl_py-1.4.0-py3-none-any.whl (126 kB)
+Collecting pyopengl
+  Using cached PyOpenGL-3.1.7-py3-none-any.whl (2.4 MB)
+Collecting glfw
+  Using cached glfw-2.6.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-manylinux2014_x86_64.whl (208 kB)
+Collecting packaging
+  Using cached packaging-23.1-py3-none-any.whl (48 kB)
+Collecting tomli>=1.0.0
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting pluggy<2.0,>=0.12
+  Using cached pluggy-1.2.0-py3-none-any.whl (17 kB)
+Collecting attrs>=19.2.0
+  Using cached attrs-23.1.0-py3-none-any.whl (61 kB)
+Collecting iniconfig
+  Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting py>=1.8.2
+  Using cached py-1.11.0-py2.py3-none-any.whl (98 kB)
+Collecting typing-extensions
+  Using cached typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Collecting importlib-resources
+  Downloading importlib_resources-5.12.0-py3-none-any.whl (36 kB)
+Collecting pillow>=8.3.2
+  Downloading Pillow-9.5.0-cp37-cp37m-manylinux_2_28_x86_64.whl (3.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 5.2 MB/s eta 0:00:00
+Collecting zipp>=0.5
+  Downloading zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.38.0-py3-none-any.whl (965 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 965.4/965.4 kB 5.0 MB/s eta 0:00:00
+Collecting cycler>=0.10
+  Using cached cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting pyparsing>=2.2.1
+  Using cached pyparsing-3.1.0-py3-none-any.whl (102 kB)
+Collecting python-dateutil>=2.7
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.4.4-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 5.7 MB/s eta 0:00:00
+Collecting decorator<5.0,>=4.0.2
+  Using cached decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting tqdm<5.0,>=4.11.2
+  Using cached tqdm-4.65.0-py3-none-any.whl (77 kB)
+Collecting requests<3.0,>=2.8.1
+  Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Collecting proglog<=1.0.0
+  Using cached proglog-0.1.10-py3-none-any.whl (6.1 kB)
+Collecting imageio_ffmpeg>=0.2.0
+  Using cached imageio_ffmpeg-0.4.8-py3-none-manylinux2010_x86_64.whl (26.9 MB)
+Collecting cffi>=1.10
+  Downloading cffi-1.15.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (427 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 427.9/427.9 kB 3.6 MB/s eta 0:00:00
+Collecting fasteners~=0.15
+  Using cached fasteners-0.18-py3-none-any.whl (18 kB)
+Collecting Cython>=0.27.2
+  Downloading Cython-3.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 2.6 MB/s eta 0:00:00
+Collecting pycparser
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Collecting six>=1.5
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting urllib3<3,>=1.21.1
+  Using cached urllib3-2.0.4-py3-none-any.whl (123 kB)
+Requirement already satisfied: certifi>=2017.4.17 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from requests<3.0,>=2.8.1->moviepy>=1.0.0->gym[all]) (2022.12.7)
+Collecting idna<4,>=2.5
+  Using cached idna-3.4-py3-none-any.whl (61 kB)
+Collecting charset-normalizer<4,>=2
+  Downloading charset_normalizer-3.2.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (175 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 175.8/175.8 kB 2.9 MB/s eta 0:00:00
+Building wheels for collected packages: moviepy, gym
+  Building wheel for moviepy (setup.py) ... done
+  Created wheel for moviepy: filename=moviepy-1.0.3-py3-none-any.whl size=110727 sha256=eeea1e10bcbb27ace15beecec0222b0be72aa9279698dcbdb6b662c7c34029d3
+  Stored in directory: /home/chyyy/.cache/pip/wheels/d7/37/b3/344c443bba4ba867458f703838f77df49bfa00c855d5511548
+  Building wheel for gym (pyproject.toml) ... done
+  Created wheel for gym: filename=gym-0.26.2-py3-none-any.whl size=827631 sha256=e1608b2880966076f2f8bf30a191d1fc6bf8cc3fe4d66723341a677c519712e6
+  Stored in directory: /home/chyyy/.cache/pip/wheels/e0/d1/88/c3c712101dac979e0bf77cdd9c89bc650ad5f41c48d8d6f167
+Successfully built moviepy gym
+Installing collected packages: swig, pyopengl, gym-notices, glfw, box2d-py, zipp, urllib3, typing-extensions, tqdm, tomli, six, pyparsing, pygame, pycparser, py, pillow, packaging, numpy, lz4, iniconfig, imageio_ffmpeg, idna, fonttools, fasteners, decorator, Cython, cycler, cloudpickle, charset-normalizer, absl-py, requests, python-dateutil, proglog, opencv-python, mujoco, kiwisolver, importlib-resources, importlib-metadata, imageio, cffi, pluggy, mujoco-py, moviepy, matplotlib, gym, attrs, ale-py, pytest
+Successfully installed Cython-3.0.0 absl-py-1.4.0 ale-py-0.8.1 attrs-23.1.0 box2d-py-2.3.5 cffi-1.15.1 charset-normalizer-3.2.0 cloudpickle-2.2.1 cycler-0.11.0 decorator-4.4.2 fasteners-0.18 fonttools-4.38.0 glfw-2.6.2 gym-0.26.2 gym-notices-0.0.8 idna-3.4 imageio-2.31.1 imageio_ffmpeg-0.4.8 importlib-metadata-6.7.0 importlib-resources-5.12.0 iniconfig-2.0.0 kiwisolver-1.4.4 lz4-4.3.2 matplotlib-3.5.3 moviepy-1.0.3 mujoco-2.2.0 mujoco-py-2.1.2.14 numpy-1.21.6 opencv-python-4.8.0.74 packaging-23.1 pillow-9.5.0 pluggy-1.2.0 proglog-0.1.10 py-1.11.0 pycparser-2.21 pygame-2.1.0 pyopengl-3.1.7 pyparsing-3.1.0 pytest-7.0.1 python-dateutil-2.8.2 requests-2.31.0 six-1.16.0 swig-4.1.1 tomli-2.0.1 tqdm-4.65.0 typing-extensions-4.7.1 urllib3-2.0.4 zipp-3.15.0
+(py37) chyyy@chyyy-virtual-machine:~/Desktop$ pip install mujoco-py==2.1.2.14
+Requirement already satisfied: mujoco-py==2.1.2.14 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (2.1.2.14)
+Requirement already satisfied: glfw>=1.4.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (2.6.2)
+Requirement already satisfied: cffi>=1.10 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (1.15.1)
+Requirement already satisfied: numpy>=1.11 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (1.21.6)
+Requirement already satisfied: imageio>=2.1.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (2.31.1)
+Requirement already satisfied: Cython>=0.27.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (3.0.0)
+Requirement already satisfied: fasteners~=0.15 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (0.18)
+Requirement already satisfied: pycparser in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from cffi>=1.10->mujoco-py==2.1.2.14) (2.21)
+Requirement already satisfied: pillow>=8.3.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from imageio>=2.1.2->mujoco-py==2.1.2.14) (9.5.0)
+(py37) chyyy@chyyy-virtual-machine:~/Desktop$ ls
+(py37) chyyy@chyyy-virtual-machine:~/Desktop$ cd ..
+(py37) chyyy@chyyy-virtual-machine:~$ ls
+1.py                                 Downloads                      Public
+2.py                                 gym                            snap
+anaconda3                            mujoco210-linux-x86_64.tar.gz  spinningup
+Anaconda3-2023.07-1-Linux-x86_64.sh  mujoco-py                      Templates
+Desktop                              Music                          Videos
+Documents                            Pictures
+(py37) chyyy@chyyy-virtual-machine:~$ python 1.py 
+Compiling /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx because it changed.
+[1/1] Cythonizing /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+    See c_warning_callback, which is the C wrapper to the user defined function
+    '''
+    global py_warning_callback
+    global mju_user_warning
+    py_warning_callback = warn
+    mju_user_warning = c_warning_callback
+                       ^
+------------------------------------------------------------
+
+anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx:92:23: Cannot assign type 'void (const char *) except * nogil' to 'void (*)(const char *) noexcept nogil'
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+    See c_warning_callback, which is the C wrapper to the user defined function
+    '''
+    global py_error_callback
+    global mju_user_error
+    py_error_callback = err_callback
+    mju_user_error = c_error_callback
+                     ^
+------------------------------------------------------------
+
+anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx:127:21: Cannot assign type 'void (const char *) except * nogil' to 'void (*)(const char *) noexcept nogil'
+Traceback (most recent call last):
+  File "1.py", line 1, in <module>
+    import mujoco_py
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/__init__.py", line 2, in <module>
+    from mujoco_py.builder import cymj, ignore_mujoco_warnings, functions, MujocoException
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 504, in <module>
+    cymj = load_cython_ext(mujoco_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 110, in load_cython_ext
+    cext_so_path = builder.build()
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 226, in build
+    built_so_file_path = self._build_impl()
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 278, in _build_impl
+    so_file_path = super()._build_impl()
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 239, in _build_impl
+    dist.ext_modules = cythonize([self.extension])
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/Cython/Build/Dependencies.py", line 1134, in cythonize
+    cythonize_one(*args)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/Cython/Build/Dependencies.py", line 1301, in cythonize_one
+    raise CompileError(None, pyx_file)
+Cython.Compiler.Errors.CompileError: /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx
+(py37) chyyy@chyyy-virtual-machine:~$ pip install cython<1.*
+Requirement already satisfied: cython in ./anaconda3/envs/py37/lib/python3.7/site-packages (3.0.0)
+(py37) chyyy@chyyy-virtual-machine:~$ pip install Cython==0.29.36
+Collecting Cython==0.29.36
+  Downloading Cython-0.29.36-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (1.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 3.6 MB/s eta 0:00:00
+Installing collected packages: Cython
+  Attempting uninstall: Cython
+    Found existing installation: Cython 3.0.0
+    Uninstalling Cython-3.0.0:
+      Successfully uninstalled Cython-3.0.0
+Successfully installed Cython-0.29.36
+(py37) chyyy@chyyy-virtual-machine:~$ python 1.py 
+Compiling /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx because it changed.
+[1/1] Cythonizing /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx
+Traceback (most recent call last):
+  File "1.py", line 1, in <module>
+    import mujoco_py
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/__init__.py", line 2, in <module>
+    from mujoco_py.builder import cymj, ignore_mujoco_warnings, functions, MujocoException
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 504, in <module>
+    cymj = load_cython_ext(mujoco_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 111, in load_cython_ext
+    mod = load_dynamic_ext('cymj', cext_so_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 130, in load_dynamic_ext
+    return loader.load_module()
+ImportError: /home/chyyy/anaconda3/envs/py37/bin/../lib/libstdc++.so.6: version `GLIBCXX_3.4.30' not found (required by /lib/x86_64-linux-gnu/libLLVM-15.so.1)
+(py37) chyyy@chyyy-virtual-machine:~$ locate libstdc++.so.6
+/home/chyyy/anaconda3/envs/mujoco/lib/libstdc++.so.6
+/home/chyyy/anaconda3/envs/mujoco/lib/libstdc++.so.6.0.29
+/home/chyyy/anaconda3/lib/libstdc++.so.6
+/home/chyyy/anaconda3/lib/libstdc++.so.6.0.29
+/home/chyyy/anaconda3/pkgs/libstdcxx-ng-11.2.0-h1234567_1/lib/libstdc++.so.6
+/home/chyyy/anaconda3/pkgs/libstdcxx-ng-11.2.0-h1234567_1/lib/libstdc++.so.6.0.29
+/snap/core20/1822/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+/snap/core20/1822/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+/snap/core20/1822/usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28-gdb.py
+/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+/usr/share/gdb/auto-load/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30-gdb.py
+(py37) chyyy@chyyy-virtual-machine:~$ cd /home/chyyy/anaconda3/envs/py37/bin/../lib
+(py37) chyyy@chyyy-virtual-machine:~/anaconda3/envs/py37/lib$ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+cp: missing destination file operand after '/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30'
+Try 'cp --help' for more information.
+(py37) chyyy@chyyy-virtual-machine:~/anaconda3/envs/py37/lib$ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30 .
+(py37) chyyy@chyyy-virtual-machine:~/anaconda3/envs/py37/lib$ rm -rf libstdc++.so.6
+(py37) chyyy@chyyy-virtual-machine:~/anaconda3/envs/py37/lib$ ln -s libstdc++.so.6.0.30 libstdc++.so.6
+(py37) chyyy@chyyy-virtual-machine:~/anaconda3/envs/py37/lib$ cd -
+/home/chyyy
+(py37) chyyy@chyyy-virtual-machine:~$ python 1.py 
+[0.  0.  1.4 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0. ]
+[-1.12164337e-05  7.29847036e-22  1.39975300e+00  9.99999999e-01
+  1.80085466e-21  4.45933954e-05 -2.70143345e-20  1.30126513e-19
+ -4.63561234e-05 -1.88020744e-20 -2.24492958e-06  4.79357124e-05
+ -6.38208396e-04 -1.61130312e-03 -1.37554006e-03  5.54173825e-05
+ -2.24492958e-06  4.79357124e-05 -6.38208396e-04 -1.61130312e-03
+ -1.37554006e-03 -5.54173825e-05 -5.73572648e-05  7.63833991e-05
+ -2.12765194e-05  5.73572648e-05 -7.63833991e-05 -2.12765194e-05]
+(py37) chyyy@chyyy-virtual-machine:~$ python 2.py 
+(py37) chyyy@chyyy-virtual-machine:~$ pip install tensorflow==1.15.5
+Collecting tensorflow==1.15.5
+  Downloading tensorflow-1.15.5-cp37-cp37m-manylinux2010_x86_64.whl (110.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.5/110.5 MB 4.5 MB/s eta 0:00:00
+Requirement already satisfied: absl-py>=0.7.0 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow==1.15.5) (1.4.0)
+Collecting astor>=0.6.0
+  Using cached astor-0.8.1-py2.py3-none-any.whl (27 kB)
+Collecting tensorboard<1.16.0,>=1.15.0
+  Using cached tensorboard-1.15.0-py3-none-any.whl (3.8 MB)
+Collecting grpcio>=1.8.6
+  Downloading grpcio-1.56.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 7.8 MB/s eta 0:00:00
+Requirement already satisfied: wheel>=0.26 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow==1.15.5) (0.38.4)
+Collecting keras-preprocessing>=1.0.5
+  Using cached Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+Requirement already satisfied: six>=1.10.0 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow==1.15.5) (1.16.0)
+Collecting keras-applications>=1.0.8
+  Using cached Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
+Collecting tensorflow-estimator==1.15.1
+  Using cached tensorflow_estimator-1.15.1-py2.py3-none-any.whl (503 kB)
+Collecting gast==0.2.2
+  Using cached gast-0.2.2.tar.gz (10 kB)
+  Preparing metadata (setup.py) ... done
+Collecting numpy<1.19.0,>=1.16.0
+  Downloading numpy-1.18.5-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.1/20.1 MB 6.1 MB/s eta 0:00:00
+Collecting protobuf>=3.6.1
+  Using cached protobuf-4.23.4-cp37-abi3-manylinux2014_x86_64.whl (304 kB)
+Collecting h5py<=2.10.0
+  Downloading h5py-2.10.0-cp37-cp37m-manylinux1_x86_64.whl (2.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 7.3 MB/s eta 0:00:00
+Collecting termcolor>=1.1.0
+  Using cached termcolor-2.3.0-py3-none-any.whl (6.9 kB)
+Collecting google-pasta>=0.1.6
+  Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Collecting wrapt>=1.11.1
+  Downloading wrapt-1.15.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.7/75.7 kB 13.2 MB/s eta 0:00:00
+Collecting opt-einsum>=2.3.2
+  Using cached opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+Collecting werkzeug>=0.11.15
+  Downloading Werkzeug-2.2.3-py3-none-any.whl (233 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.6/233.6 kB 13.3 MB/s eta 0:00:00
+Collecting markdown>=2.6.8
+  Using cached Markdown-3.4.4-py3-none-any.whl (94 kB)
+Requirement already satisfied: setuptools>=41.0.0 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from tensorboard<1.16.0,>=1.15.0->tensorflow==1.15.5) (65.6.3)
+Requirement already satisfied: importlib-metadata>=4.4 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from markdown>=2.6.8->tensorboard<1.16.0,>=1.15.0->tensorflow==1.15.5) (6.7.0)
+Collecting MarkupSafe>=2.1.1
+  Downloading MarkupSafe-2.1.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Requirement already satisfied: zipp>=0.5 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from importlib-metadata>=4.4->markdown>=2.6.8->tensorboard<1.16.0,>=1.15.0->tensorflow==1.15.5) (3.15.0)
+Requirement already satisfied: typing-extensions>=3.6.4 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from importlib-metadata>=4.4->markdown>=2.6.8->tensorboard<1.16.0,>=1.15.0->tensorflow==1.15.5) (4.7.1)
+Building wheels for collected packages: gast
+  Building wheel for gast (setup.py) ... done
+  Created wheel for gast: filename=gast-0.2.2-py3-none-any.whl size=7537 sha256=9f24cb2797d225f1a4fc0bd9c37d0ce7ad3622de1dbafcecb29364326bc61799
+  Stored in directory: /home/chyyy/.cache/pip/wheels/cf/87/6f/3f34218ef184368cec9ee65bdfd65baf117811f0a0ce1263ff
+Successfully built gast
+Installing collected packages: tensorflow-estimator, wrapt, termcolor, protobuf, numpy, MarkupSafe, grpcio, google-pasta, gast, astor, werkzeug, opt-einsum, markdown, keras-preprocessing, h5py, tensorboard, keras-applications, tensorflow
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.21.6
+    Uninstalling numpy-1.21.6:
+      Successfully uninstalled numpy-1.21.6
+Successfully installed MarkupSafe-2.1.3 astor-0.8.1 gast-0.2.2 google-pasta-0.2.0 grpcio-1.56.2 h5py-2.10.0 keras-applications-1.0.8 keras-preprocessing-1.1.2 markdown-3.4.4 numpy-1.18.5 opt-einsum-3.3.0 protobuf-4.23.4 tensorboard-1.15.0 tensorflow-1.15.5 tensorflow-estimator-1.15.1 termcolor-2.3.0 werkzeug-2.2.3 wrapt-1.15.0
+(py37) chyyy@chyyy-virtual-machine:~$ pip install mujoco-py==2.1.2.14
+Requirement already satisfied: mujoco-py==2.1.2.14 in ./anaconda3/envs/py37/lib/python3.7/site-packages (2.1.2.14)
+Requirement already satisfied: fasteners~=0.15 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (0.18)
+Requirement already satisfied: cffi>=1.10 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (1.15.1)
+Requirement already satisfied: imageio>=2.1.2 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (2.31.1)
+Requirement already satisfied: Cython>=0.27.2 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (0.29.36)
+Requirement already satisfied: numpy>=1.11 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (1.18.5)
+Requirement already satisfied: glfw>=1.4.0 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (2.6.2)
+Requirement already satisfied: pycparser in ./anaconda3/envs/py37/lib/python3.7/site-packages (from cffi>=1.10->mujoco-py==2.1.2.14) (2.21)
+Requirement already satisfied: pillow>=8.3.2 in ./anaconda3/envs/py37/lib/python3.7/site-packages (from imageio>=2.1.2->mujoco-py==2.1.2.14) (9.5.0)
+(py37) chyyy@chyyy-virtual-machine:~$ cd mujoco-py/
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py$ ls
+build       examples     mujoco_py           requirements.dev.txt  ur5
+dist        LICENSE.md   mujoco_py.egg-info  requirements.txt      vendor
+Dockerfile  Makefile     pyproject.toml      scripts               xmls
+docs        MANIFEST.in  README.md           setup.py
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py$ cd ur5/
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ ls
+log  main.py  p  plot.py  __pycache__  test.py  ur5  UR5_Controller.py  ur5.xml
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python main.py 
+Traceback (most recent call last):
+  File "main.py", line 1, in <module>
+    from spinup import ppo_pytorch as ppo
+ModuleNotFoundError: No module named 'spinup'
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip install spinup
+Collecting spinup
+  Downloading spinup-0.1.tar.gz (2.5 kB)
+  Preparing metadata (setup.py) ... done
+Building wheels for collected packages: spinup
+  Building wheel for spinup (setup.py) ... done
+  Created wheel for spinup: filename=spinup-0.1-py3-none-any.whl size=3202 sha256=a3c0d0b691accfeb9222cc57fa93f69dc5ee9ba2c0d97432eb0b058f11901a6a
+  Stored in directory: /home/chyyy/.cache/pip/wheels/ff/65/f8/4f853773c3b8188a2273344c70fe50a03eda3b44805215f5b9
+Successfully built spinup
+Installing collected packages: spinup
+Successfully installed spinup-0.1
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python main.py 
+Traceback (most recent call last):
+  File "main.py", line 1, in <module>
+    from spinup import ppo_pytorch as ppo
+ImportError: cannot import name 'ppo_pytorch' from 'spinup' (/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/spinup/__init__.py)
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip uninstall spinup.
+
+ERROR: Invalid requirement: 'spinup.'
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ 
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip uninstall spinup
+Found existing installation: spinup 0.1
+Uninstalling spinup-0.1:
+  Would remove:
+    /home/chyyy/anaconda3/envs/py37/bin/spinup
+    /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/spinup-0.1.dist-info/*
+    /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/spinup/*
+Proceed (Y/n)? y
+  Successfully uninstalled spinup-0.1
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ cd `
+> 
+> 
+> 
+> 
+> 
+> ]
+> ^C
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ 
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ 
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ 
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ 
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ cd ~
+(py37) chyyy@chyyy-virtual-machine:~$ git clone https://github.com/openai/spinningup.git
+fatal: destination path 'spinningup' already exists and is not an empty directory.
+(py37) chyyy@chyyy-virtual-machine:~$ cd spinningup/
+(py37) chyyy@chyyy-virtual-machine:~/spinningup$ ls
+build  docs     readme.md        setup.py  spinup.egg-info  travis_setup.sh
+dist   LICENSE  readthedocs.yml  spinup    test
+(py37) chyyy@chyyy-virtual-machine:~/spinningup$ pip install -e .
+Obtaining file:///home/chyyy/spinningup
+  Preparing metadata (setup.py) ... done
+Collecting cloudpickle==1.2.1
+  Using cached cloudpickle-1.2.1-py2.py3-none-any.whl (25 kB)
+Collecting gym[atari,box2d,classic_control]~=0.15.3
+  Using cached gym-0.15.7.tar.gz (1.6 MB)
+  Preparing metadata (setup.py) ... done
+Collecting ipython
+  Downloading ipython-7.34.0-py3-none-any.whl (793 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 793.8/793.8 kB 6.2 MB/s eta 0:00:00
+Collecting joblib
+  Downloading joblib-1.3.1-py3-none-any.whl (301 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.0/302.0 kB 8.3 MB/s eta 0:00:00
+Collecting matplotlib==3.1.1
+  Downloading matplotlib-3.1.1-cp37-cp37m-manylinux1_x86_64.whl (13.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 6.2 MB/s eta 0:00:00
+Collecting mpi4py
+  Using cached mpi4py-3.1.4.tar.gz (2.5 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: numpy in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from spinup==0.2.0) (1.18.5)
+Collecting pandas
+  Downloading pandas-1.3.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 8.7 MB/s eta 0:00:00
+Requirement already satisfied: pytest in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from spinup==0.2.0) (7.0.1)
+Collecting psutil
+  Using cached psutil-5.9.5-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (282 kB)
+Collecting scipy
+  Downloading scipy-1.7.3-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (38.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.1/38.1 MB 7.2 MB/s eta 0:00:00
+Collecting seaborn==0.8.1
+  Using cached seaborn-0.8.1.tar.gz (178 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: tensorflow<2.0,>=1.8.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from spinup==0.2.0) (1.15.5)
+Collecting torch==1.3.1
+  Downloading torch-1.3.1-cp37-cp37m-manylinux1_x86_64.whl (734.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 734.6/734.6 MB 2.0 MB/s eta 0:00:00
+Requirement already satisfied: tqdm in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from spinup==0.2.0) (4.65.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from matplotlib==3.1.1->spinup==0.2.0) (1.4.4)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from matplotlib==3.1.1->spinup==0.2.0) (3.1.0)
+Requirement already satisfied: python-dateutil>=2.1 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from matplotlib==3.1.1->spinup==0.2.0) (2.8.2)
+Requirement already satisfied: cycler>=0.10 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from matplotlib==3.1.1->spinup==0.2.0) (0.11.0)
+Requirement already satisfied: six in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from gym[atari,box2d,classic_control]~=0.15.3->spinup==0.2.0) (1.16.0)
+Collecting pyglet<=1.5.0,>=1.4.0
+  Using cached pyglet-1.5.0-py2.py3-none-any.whl (1.0 MB)
+Collecting atari_py~=0.2.0
+  Downloading atari_py-0.2.9-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.8/2.8 MB 7.8 MB/s eta 0:00:00
+Requirement already satisfied: Pillow in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from gym[atari,box2d,classic_control]~=0.15.3->spinup==0.2.0) (9.5.0)
+Requirement already satisfied: opencv-python in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from gym[atari,box2d,classic_control]~=0.15.3->spinup==0.2.0) (4.8.0.74)
+Requirement already satisfied: box2d-py~=2.3.5 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from gym[atari,box2d,classic_control]~=0.15.3->spinup==0.2.0) (2.3.5)
+Requirement already satisfied: protobuf>=3.6.1 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (4.23.4)
+Requirement already satisfied: keras-applications>=1.0.8 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (1.0.8)
+Requirement already satisfied: tensorflow-estimator==1.15.1 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (1.15.1)
+Requirement already satisfied: wrapt>=1.11.1 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (1.15.0)
+Requirement already satisfied: grpcio>=1.8.6 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (1.56.2)
+Requirement already satisfied: wheel>=0.26 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (0.38.4)
+Requirement already satisfied: google-pasta>=0.1.6 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (0.2.0)
+Requirement already satisfied: h5py<=2.10.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (2.10.0)
+Requirement already satisfied: opt-einsum>=2.3.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (3.3.0)
+Requirement already satisfied: tensorboard<1.16.0,>=1.15.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (1.15.0)
+Requirement already satisfied: absl-py>=0.7.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (1.4.0)
+Requirement already satisfied: keras-preprocessing>=1.0.5 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (1.1.2)
+Requirement already satisfied: termcolor>=1.1.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (2.3.0)
+Requirement already satisfied: astor>=0.6.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (0.8.1)
+Requirement already satisfied: gast==0.2.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorflow<2.0,>=1.8.0->spinup==0.2.0) (0.2.2)
+Collecting matplotlib-inline
+  Using cached matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting backcall
+  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: setuptools>=18.5 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from ipython->spinup==0.2.0) (65.6.3)
+Requirement already satisfied: decorator in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from ipython->spinup==0.2.0) (4.4.2)
+Collecting pexpect>4.3
+  Using cached pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting pygments
+  Using cached Pygments-2.15.1-py3-none-any.whl (1.1 MB)
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+  Using cached prompt_toolkit-3.0.39-py3-none-any.whl (385 kB)
+Collecting jedi>=0.16
+  Using cached jedi-0.19.0-py2.py3-none-any.whl (1.6 MB)
+Collecting traitlets>=4.2
+  Using cached traitlets-5.9.0-py3-none-any.whl (117 kB)
+Collecting pytz>=2017.3
+  Using cached pytz-2023.3-py2.py3-none-any.whl (502 kB)
+Requirement already satisfied: importlib-metadata>=0.12 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from pytest->spinup==0.2.0) (6.7.0)
+Requirement already satisfied: tomli>=1.0.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from pytest->spinup==0.2.0) (2.0.1)
+Requirement already satisfied: py>=1.8.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from pytest->spinup==0.2.0) (1.11.0)
+Requirement already satisfied: pluggy<2.0,>=0.12 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from pytest->spinup==0.2.0) (1.2.0)
+Requirement already satisfied: attrs>=19.2.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from pytest->spinup==0.2.0) (23.1.0)
+Requirement already satisfied: packaging in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from pytest->spinup==0.2.0) (23.1)
+Requirement already satisfied: iniconfig in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from pytest->spinup==0.2.0) (2.0.0)
+Requirement already satisfied: typing-extensions>=3.6.4 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest->spinup==0.2.0) (4.7.1)
+Requirement already satisfied: zipp>=0.5 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest->spinup==0.2.0) (3.15.0)
+Collecting parso<0.9.0,>=0.8.3
+  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
+Collecting ptyprocess>=0.5
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
+Collecting future
+  Using cached future-0.18.3.tar.gz (840 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: werkzeug>=0.11.15 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorboard<1.16.0,>=1.15.0->tensorflow<2.0,>=1.8.0->spinup==0.2.0) (2.2.3)
+Requirement already satisfied: markdown>=2.6.8 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from tensorboard<1.16.0,>=1.15.0->tensorflow<2.0,>=1.8.0->spinup==0.2.0) (3.4.4)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from werkzeug>=0.11.15->tensorboard<1.16.0,>=1.15.0->tensorflow<2.0,>=1.8.0->spinup==0.2.0) (2.1.3)
+Building wheels for collected packages: seaborn, mpi4py, gym, future
+  Building wheel for seaborn (setup.py) ... done
+  Created wheel for seaborn: filename=seaborn-0.8.1-py3-none-any.whl size=184851 sha256=a61a1816fabd6f889460f2486d45b0a009c3abcbaf8bcd86f2f89ff4f080b162
+  Stored in directory: /home/chyyy/.cache/pip/wheels/93/18/86/ac69c46915512f82246b69eb40ba61a11e04ce8d51f4573136
+  Building wheel for mpi4py (pyproject.toml) ... /
+
+done
+  Created wheel for mpi4py: filename=mpi4py-3.1.4-cp37-cp37m-linux_x86_64.whl size=2992413 sha256=fb3939914638e76145c4bf62bde254883cc4b58a2cb9e659301ddeef124f6982
+  Stored in directory: /home/chyyy/.cache/pip/wheels/87/81/66/c445deac61f7fb9b727c7b87ecc42dba6b948a03674b2fc56d
+  Building wheel for gym (setup.py) ... done
+  Created wheel for gym: filename=gym-0.15.7-py3-none-any.whl size=1648816 sha256=f8bbfc73a3bf715d665cacf4b23c99d9d599424a5011e4278053a65f5a714d14
+  Stored in directory: /home/chyyy/.cache/pip/wheels/85/32/c4/b1ad386be4eec417b824adb04bc6a4b4fed1a59db4a1a41c1e
+  Building wheel for future (setup.py) ... done
+  Created wheel for future: filename=future-0.18.3-py3-none-any.whl size=492025 sha256=06b8334154a90aec97389bebc4a150921656385a630e05c87bd063c639dec7aa
+  Stored in directory: /home/chyyy/.cache/pip/wheels/52/2a/fc/520209cfa6448febd490720a0b09036cb367628f7c4e9cc172
+Successfully built seaborn mpi4py gym future
+Installing collected packages: wcwidth, pytz, ptyprocess, pickleshare, cloudpickle, backcall, traitlets, torch, scipy, pygments, psutil, prompt-toolkit, pexpect, parso, mpi4py, joblib, future, atari_py, pyglet, pandas, matplotlib-inline, matplotlib, jedi, seaborn, ipython, gym, spinup
+  Attempting uninstall: cloudpickle
+    Found existing installation: cloudpickle 2.2.1
+    Uninstalling cloudpickle-2.2.1:
+      Successfully uninstalled cloudpickle-2.2.1
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.5.3
+    Uninstalling matplotlib-3.5.3:
+      Successfully uninstalled matplotlib-3.5.3
+  Attempting uninstall: gym
+    Found existing installation: gym 0.26.2
+    Uninstalling gym-0.26.2:
+      Successfully uninstalled gym-0.26.2
+  Running setup.py develop for spinup
+Successfully installed atari_py-0.2.9 backcall-0.2.0 cloudpickle-1.2.1 future-0.18.3 gym-0.15.7 ipython-7.34.0 jedi-0.19.0 joblib-1.3.1 matplotlib-3.1.1 matplotlib-inline-0.1.6 mpi4py-3.1.4 pandas-1.3.5 parso-0.8.3 pexpect-4.8.0 pickleshare-0.7.5 prompt-toolkit-3.0.39 psutil-5.9.5 ptyprocess-0.7.0 pyglet-1.5.0 pygments-2.15.1 pytz-2023.3 scipy-1.7.3 seaborn-0.8.1 spinup-0.2.0 torch-1.3.1 traitlets-5.9.0 wcwidth-0.2.6
+(py37) chyyy@chyyy-virtual-machine:~/spinningup$ 
+(py37) chyyy@chyyy-virtual-machine:~/spinningup$ 
+(py37) chyyy@chyyy-virtual-machine:~/spinningup$ cd .
+(py37) chyyy@chyyy-virtual-machine:~/spinningup$ cd ..
+(py37) chyyy@chyyy-virtual-machine:~$ python 1.py 
+Traceback (most recent call last):
+  File "1.py", line 1, in <module>
+    import mujoco_py
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/__init__.py", line 2, in <module>
+    from mujoco_py.builder import cymj, ignore_mujoco_warnings, functions, MujocoException
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 504, in <module>
+    cymj = load_cython_ext(mujoco_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 106, in load_cython_ext
+    mod = load_dynamic_ext('cymj', cext_so_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 130, in load_dynamic_ext
+    return loader.load_module()
+  File "anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx", line 1, in init mujoco_py.cymj
+    # cython: language_level=3
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+(py37) chyyy@chyyy-virtual-machine:~$ python 2.py 
+Traceback (most recent call last):
+  File "2.py", line 2, in <module>
+    env = gym.make("LunarLander-v2", render_mode="human")
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/gym/envs/registration.py", line 156, in make
+    return registry.make(id, **kwargs)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/gym/envs/registration.py", line 101, in make
+    env = spec.make(**kwargs)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/gym/envs/registration.py", line 73, in make
+    env = cls(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'render_mode'
+(py37) chyyy@chyyy-virtual-machine:~$ cd mujoco-py/
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py$ ls
+build       examples     mujoco_py           requirements.dev.txt  ur5
+dist        LICENSE.md   mujoco_py.egg-info  requirements.txt      vendor
+Dockerfile  Makefile     pyproject.toml      scripts               xmls
+docs        MANIFEST.in  README.md           setup.py
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py$ cd ur5/
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ ls
+log  main.py  p  plot.py  __pycache__  test.py  ur5  UR5_Controller.py  ur5.xml
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python main.py 
+Traceback (most recent call last):
+  File "main.py", line 1, in <module>
+    from spinup import ppo_pytorch as ppo
+  File "/home/chyyy/spinningup/spinup/__init__.py", line 3, in <module>
+    import tensorflow as tf
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow/__init__.py", line 102, in <module>
+    from tensorflow_core import *
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/__init__.py", line 28, in <module>
+    from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
+  File "<frozen importlib._bootstrap>", line 1019, in _handle_fromlist
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow/__init__.py", line 50, in __getattr__
+    module = self._load()
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow/__init__.py", line 44, in _load
+    module = _importlib.import_module(self.__name__)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/python/__init__.py", line 52, in <module>
+    from tensorflow.core.framework.graph_pb2 import *
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/core/framework/graph_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import node_def_pb2 as tensorflow_dot_core_dot_framework_dot_node__def__pb2
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/core/framework/node_def_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import attr_value_pb2 as tensorflow_dot_core_dot_framework_dot_attr__value__pb2
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/core/framework/attr_value_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import tensor_pb2 as tensorflow_dot_core_dot_framework_dot_tensor__pb2
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/core/framework/tensor_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import resource_handle_pb2 as tensorflow_dot_core_dot_framework_dot_resource__handle__pb2
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/core/framework/resource_handle_pb2.py", line 16, in <module>
+    from tensorflow.core.framework import tensor_shape_pb2 as tensorflow_dot_core_dot_framework_dot_tensor__shape__pb2
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/tensorflow_core/core/framework/tensor_shape_pb2.py", line 42, in <module>
+    serialized_options=None, file=DESCRIPTOR),
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/google/protobuf/descriptor.py", line 561, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot not be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip install protoc==3.19.*
+ERROR: Could not find a version that satisfies the requirement protoc==3.19.* (from versions: none)
+ERROR: No matching distribution found for protoc==3.19.*
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip install protobuf==3.20.*
+Collecting protobuf==3.20.*
+  Downloading protobuf-3.20.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 6.8 MB/s eta 0:00:00
+Installing collected packages: protobuf
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 4.23.4
+    Uninstalling protobuf-4.23.4:
+      Successfully uninstalled protobuf-4.23.4
+Successfully installed protobuf-3.20.3
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python main.py 
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    from UR5_Controller import UR5_Controller
+  File "/home/chyyy/mujoco-py/ur5/UR5_Controller.py", line 1, in <module>
+    import mujoco_py as mp
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/__init__.py", line 2, in <module>
+    from mujoco_py.builder import cymj, ignore_mujoco_warnings, functions, MujocoException
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 504, in <module>
+    cymj = load_cython_ext(mujoco_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 106, in load_cython_ext
+    mod = load_dynamic_ext('cymj', cext_so_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 130, in load_dynamic_ext
+    return loader.load_module()
+  File "anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx", line 1, in init mujoco_py.cymj
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip show numpy
+Name: numpy
+Version: 1.18.5
+Summary: NumPy is the fundamental package for array computing with Python.
+Home-page: https://www.numpy.org
+Author: Travis E. Oliphant et al.
+Author-email: 
+License: BSD
+Location: /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages
+Requires: 
+Required-by: ale-py, atari-py, gym, h5py, imageio, Keras-Applications, Keras-Preprocessing, matplotlib, moviepy, mujoco, mujoco-py, opencv-python, opt-einsum, pandas, scipy, spinup, tensorboard, tensorflow, torch
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip install numpy===1.17.*
+ERROR: Ignored the following versions that require a different python version: 1.22.0 Requires-Python >=3.8; 1.22.1 Requires-Python >=3.8; 1.22.2 Requires-Python >=3.8; 1.22.3 Requires-Python >=3.8; 1.22.4 Requires-Python >=3.8; 1.23.0 Requires-Python >=3.8; 1.23.0rc1 Requires-Python >=3.8; 1.23.0rc2 Requires-Python >=3.8; 1.23.0rc3 Requires-Python >=3.8; 1.23.1 Requires-Python >=3.8; 1.23.2 Requires-Python >=3.8; 1.23.3 Requires-Python >=3.8; 1.23.4 Requires-Python >=3.8; 1.23.5 Requires-Python >=3.8; 1.24.0 Requires-Python >=3.8; 1.24.0rc1 Requires-Python >=3.8; 1.24.0rc2 Requires-Python >=3.8; 1.24.1 Requires-Python >=3.8; 1.24.2 Requires-Python >=3.8; 1.24.3 Requires-Python >=3.8; 1.24.4 Requires-Python >=3.8; 1.25.0 Requires-Python >=3.9; 1.25.0rc1 Requires-Python >=3.9; 1.25.1 Requires-Python >=3.9
+ERROR: Could not find a version that satisfies the requirement numpy===1.17.* (from versions: 1.3.0, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.6.1, 1.6.2, 1.7.0, 1.7.1, 1.7.2, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.10.0.post2, 1.10.1, 1.10.2, 1.10.4, 1.11.0, 1.11.1, 1.11.2, 1.11.3, 1.12.0, 1.12.1, 1.13.0, 1.13.1, 1.13.3, 1.14.0, 1.14.1, 1.14.2, 1.14.3, 1.14.4, 1.14.5, 1.14.6, 1.15.0, 1.15.1, 1.15.2, 1.15.3, 1.15.4, 1.16.0, 1.16.1, 1.16.2, 1.16.3, 1.16.4, 1.16.5, 1.16.6, 1.17.0, 1.17.1, 1.17.2, 1.17.3, 1.17.4, 1.17.5, 1.18.0, 1.18.1, 1.18.2, 1.18.3, 1.18.4, 1.18.5, 1.19.0, 1.19.1, 1.19.2, 1.19.3, 1.19.4, 1.19.5, 1.20.0, 1.20.1, 1.20.2, 1.20.3, 1.21.0, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5, 1.21.6)
+ERROR: No matching distribution found for numpy===1.17.*
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip install numpy===1.17.
+ERROR: Ignored the following versions that require a different python version: 1.22.0 Requires-Python >=3.8; 1.22.1 Requires-Python >=3.8; 1.22.2 Requires-Python >=3.8; 1.22.3 Requires-Python >=3.8; 1.22.4 Requires-Python >=3.8; 1.23.0 Requires-Python >=3.8; 1.23.0rc1 Requires-Python >=3.8; 1.23.0rc2 Requires-Python >=3.8; 1.23.0rc3 Requires-Python >=3.8; 1.23.1 Requires-Python >=3.8; 1.23.2 Requires-Python >=3.8; 1.23.3 Requires-Python >=3.8; 1.23.4 Requires-Python >=3.8; 1.23.5 Requires-Python >=3.8; 1.24.0 Requires-Python >=3.8; 1.24.0rc1 Requires-Python >=3.8; 1.24.0rc2 Requires-Python >=3.8; 1.24.1 Requires-Python >=3.8; 1.24.2 Requires-Python >=3.8; 1.24.3 Requires-Python >=3.8; 1.24.4 Requires-Python >=3.8; 1.25.0 Requires-Python >=3.9; 1.25.0rc1 Requires-Python >=3.9; 1.25.1 Requires-Python >=3.9
+ERROR: Could not find a version that satisfies the requirement numpy===1.17. (from versions: 1.3.0, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.6.1, 1.6.2, 1.7.0, 1.7.1, 1.7.2, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.10.0.post2, 1.10.1, 1.10.2, 1.10.4, 1.11.0, 1.11.1, 1.11.2, 1.11.3, 1.12.0, 1.12.1, 1.13.0, 1.13.1, 1.13.3, 1.14.0, 1.14.1, 1.14.2, 1.14.3, 1.14.4, 1.14.5, 1.14.6, 1.15.0, 1.15.1, 1.15.2, 1.15.3, 1.15.4, 1.16.0, 1.16.1, 1.16.2, 1.16.3, 1.16.4, 1.16.5, 1.16.6, 1.17.0, 1.17.1, 1.17.2, 1.17.3, 1.17.4, 1.17.5, 1.18.0, 1.18.1, 1.18.2, 1.18.3, 1.18.4, 1.18.5, 1.19.0, 1.19.1, 1.19.2, 1.19.3, 1.19.4, 1.19.5, 1.20.0, 1.20.1, 1.20.2, 1.20.3, 1.21.0, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.5, 1.21.6)
+ERROR: No matching distribution found for numpy===1.17.
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python main.py 
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    from UR5_Controller import UR5_Controller
+  File "/home/chyyy/mujoco-py/ur5/UR5_Controller.py", line 1, in <module>
+    import mujoco_py as mp
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/__init__.py", line 2, in <module>
+    from mujoco_py.builder import cymj, ignore_mujoco_warnings, functions, MujocoException
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 504, in <module>
+    cymj = load_cython_ext(mujoco_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 106, in load_cython_ext
+    mod = load_dynamic_ext('cymj', cext_so_path)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/builder.py", line 130, in load_dynamic_ext
+    return loader.load_module()
+  File "anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/cymj.pyx", line 1, in init mujoco_py.cymj
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip install mujoco-py==2.1.2.14
+Requirement already satisfied: mujoco-py==2.1.2.14 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (2.1.2.14)
+Requirement already satisfied: cffi>=1.10 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (1.15.1)
+Requirement already satisfied: Cython>=0.27.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (0.29.36)
+Requirement already satisfied: glfw>=1.4.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (2.6.2)
+Requirement already satisfied: numpy>=1.11 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (1.18.5)
+Requirement already satisfied: imageio>=2.1.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (2.31.1)
+Requirement already satisfied: fasteners~=0.15 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (0.18)
+Requirement already satisfied: pycparser in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from cffi>=1.10->mujoco-py==2.1.2.14) (2.21)
+Requirement already satisfied: pillow>=8.3.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from imageio>=2.1.2->mujoco-py==2.1.2.14) (9.5.0)
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip install mujoco-py==2.1.2.14 --force-reinstall
+Collecting mujoco-py==2.1.2.14
+  Using cached mujoco_py-2.1.2.14-py3-none-any.whl (2.4 MB)
+Collecting cffi>=1.10
+  Using cached cffi-1.15.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (427 kB)
+Collecting fasteners~=0.15
+  Using cached fasteners-0.18-py3-none-any.whl (18 kB)
+Collecting glfw>=1.4.0
+  Using cached glfw-2.6.2-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-manylinux2014_x86_64.whl (208 kB)
+Collecting imageio>=2.1.2
+  Using cached imageio-2.31.1-py3-none-any.whl (313 kB)
+Collecting numpy>=1.11
+  Using cached numpy-1.21.6-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+Collecting Cython>=0.27.2
+  Using cached Cython-3.0.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.5 MB)
+Collecting pycparser
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Collecting pillow>=8.3.2
+  Using cached Pillow-9.5.0-cp37-cp37m-manylinux_2_28_x86_64.whl (3.4 MB)
+Installing collected packages: glfw, pycparser, pillow, numpy, fasteners, Cython, imageio, cffi, mujoco-py
+  Attempting uninstall: glfw
+    Found existing installation: glfw 2.6.2
+    Uninstalling glfw-2.6.2:
+      Successfully uninstalled glfw-2.6.2
+  Attempting uninstall: pycparser
+    Found existing installation: pycparser 2.21
+    Uninstalling pycparser-2.21:
+      Successfully uninstalled pycparser-2.21
+  Attempting uninstall: pillow
+    Found existing installation: Pillow 9.5.0
+    Uninstalling Pillow-9.5.0:
+      Successfully uninstalled Pillow-9.5.0
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.18.5
+    Uninstalling numpy-1.18.5:
+      Successfully uninstalled numpy-1.18.5
+  Attempting uninstall: fasteners
+    Found existing installation: fasteners 0.18
+    Uninstalling fasteners-0.18:
+      Successfully uninstalled fasteners-0.18
+  Attempting uninstall: Cython
+    Found existing installation: Cython 0.29.36
+    Uninstalling Cython-0.29.36:
+      Successfully uninstalled Cython-0.29.36
+  Attempting uninstall: imageio
+    Found existing installation: imageio 2.31.1
+    Uninstalling imageio-2.31.1:
+      Successfully uninstalled imageio-2.31.1
+  Attempting uninstall: cffi
+    Found existing installation: cffi 1.15.1
+    Uninstalling cffi-1.15.1:
+      Successfully uninstalled cffi-1.15.1
+  Attempting uninstall: mujoco-py
+    Found existing installation: mujoco-py 2.1.2.14
+    Uninstalling mujoco-py-2.1.2.14:
+      Successfully uninstalled mujoco-py-2.1.2.14
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow 1.15.5 requires numpy<1.19.0,>=1.16.0, but you have numpy 1.21.6 which is incompatible.
+Successfully installed Cython-3.0.0 cffi-1.15.1 fasteners-0.18 glfw-2.6.2 imageio-2.31.1 mujoco-py-2.1.2.14 numpy-1.21.6 pillow-9.5.0 pycparser-2.21
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ pip install mujoco-py==2.1.2.14
+Requirement already satisfied: mujoco-py==2.1.2.14 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (2.1.2.14)
+Requirement already satisfied: fasteners~=0.15 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (0.18)
+Requirement already satisfied: imageio>=2.1.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (2.31.1)
+Requirement already satisfied: cffi>=1.10 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (1.15.1)
+Requirement already satisfied: numpy>=1.11 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (1.21.6)
+Requirement already satisfied: glfw>=1.4.0 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (2.6.2)
+Requirement already satisfied: Cython>=0.27.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from mujoco-py==2.1.2.14) (3.0.0)
+Requirement already satisfied: pycparser in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from cffi>=1.10->mujoco-py==2.1.2.14) (2.21)
+Requirement already satisfied: pillow>=8.3.2 in /home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages (from imageio>=2.1.2->mujoco-py==2.1.2.14) (9.5.0)
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python main.py 
+
+
+Loading from log/pyt_save/model.pt.
+
+
+Creating window glfw
+Logging data to /tmp/experiments/1690679574/progress.txt
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ ls
+log  main.py  p  plot.py  __pycache__  test.py  ur5  UR5_Controller.py  ur5.xml
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python test.py 
+Creating window glfw
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ cd ~
+(py37) chyyy@chyyy-virtual-machine:~$ python 1.py
+[0.  0.  1.4 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0. ]
+[-1.12164337e-05  7.29847036e-22  1.39975300e+00  9.99999999e-01
+  1.80085466e-21  4.45933954e-05 -2.70143345e-20  1.30126513e-19
+ -4.63561234e-05 -1.88020744e-20 -2.24492958e-06  4.79357124e-05
+ -6.38208396e-04 -1.61130312e-03 -1.37554006e-03  5.54173825e-05
+ -2.24492958e-06  4.79357124e-05 -6.38208396e-04 -1.61130312e-03
+ -1.37554006e-03 -5.54173825e-05 -5.73572648e-05  7.63833991e-05
+ -2.12765194e-05  5.73572648e-05 -7.63833991e-05 -2.12765194e-05]
+(py37) chyyy@chyyy-virtual-machine:~$ python main.py 
+python: can't open file 'main.py': [Errno 2] No such file or directory
+(py37) chyyy@chyyy-virtual-machine:~$ cd mujoco-py/
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py$ cd ur5/
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python main.py 
+
+
+Loading from log/pyt_save/model.pt.
+
+
+Creating window glfw
+Logging data to /tmp/experiments/1690679811/progress.txt
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ python main.py 
+
+
+Loading from log/pyt_save/model.pt.
+
+
+Creating window glfw
+Logging data to /tmp/experiments/1690680030/progress.txt
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+GLFW error (code %d): %s 65544 b'Wayland: Standard cursor shape unavailable'
+^CTraceback (most recent call last):
+  File "main.py", line 21, in <module>
+    run_policy(env_test, get_action)
+  File "/home/chyyy/spinningup/spinup/utils/test_policy.py", line 121, in run_policy
+    env.render()
+  File "/home/chyyy/mujoco-py/ur5/UR5_Controller.py", line 35, in render
+    self.viewer.render()
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/mjviewer.py", line 206, in render
+    render_inner_loop(self)
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/mjviewer.py", line 182, in render_inner_loop
+    super().render()
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/mjviewer.py", line 58, in render
+    super().render()
+  File "anaconda3/envs/py37/lib/python3.7/site-packages/mujoco_py/mjrendercontext.pyx", line 329, in mujoco_py.cymj.MjRenderContextWindow.render
+  File "/home/chyyy/anaconda3/envs/py37/lib/python3.7/site-packages/glfw/__init__.py", line 2370, in swap_buffers
+    def swap_buffers(window):
+KeyboardInterrupt
+(py37) chyyy@chyyy-virtual-machine:~/mujoco-py/ur5$ 
